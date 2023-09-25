@@ -18,7 +18,6 @@ function App() {
   
   useEffect(loadData, []);
     
-
   function addItem(item, quantity) {
     fetch("https://xr4ljr-8080.csb.app/api/items/new", {
       method: "POST",
@@ -34,6 +33,18 @@ function App() {
     .then(loadData);
   }
 
+  function deleteItem(id) {
+    fetch("https://xr4ljr-8080.csb.app/api/items/" + id, { 
+    method: "DELETE", 
+    headers: { 
+        "Content-type": "application/json; charset=UTF-8", 
+    }, 
+
+    mode: "cors", 
+
+}).then(loadData); 
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -41,7 +52,7 @@ function App() {
       </header>
       <main>
         <ShoppingForm addItem={addItem} />
-        <ShoppingList shoppingList={shoppingList} />
+        <ShoppingList shoppingList={shoppingList} deleteItem={deleteItem} />
       </main>
     </div>
   );

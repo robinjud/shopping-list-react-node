@@ -1,20 +1,31 @@
 import React from 'react'
 
 function ShoppingItem(props) { 
-    return <li>{ props.item} ({props.quantity}) <button>DELETE</button></li>; 
+
+   function deleteClicked() {
+     props.deleteItem(props.id);
+   }
+
+    return  (
+      <li>
+          { props.item} ({props.quantity})
+          <button onClick={deleteClicked}>DELETE</button>
+      </li>
+   ); 
 } 
 
-export default function shoppingList({ shoppingList }) {
-  const itemJsx = shoppingList.map(listItem => 
+export default function ShoppingList({ shoppingList, deleteItem }) {
+  const itemsJsx = shoppingList.map(listItem => 
   <ShoppingItem
    key={listItem.id} 
    id={listItem.id} 
    item={listItem.item} 
-   quantity={listItem.quantity}/>
+   quantity={listItem.quantity} 
+   deleteItem={deleteItem} />
   );
 
   return (
-    <ul>{ itemJsx }</ul>
+    <ul>{ itemsJsx }</ul>
 
   )
 }
