@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import ShoppingForm from "./Components/ShoppingForm/ShoppingForm";
 import ShoppingList from "./Components/ShoppingList/ShoppingList";
 
+import axios from "axios";
+
 import "./App.css";
 
 function App() {
@@ -43,7 +45,17 @@ function App() {
     }).then(loadData);
   }
 
+  
   function updateItem(id, item, quantity) {
+    /*
+     axios.
+       post("https://xr4ljr-8080.csb.app/api/items/" + id, "/update" {
+          item,
+          quantity,
+       })
+       .then(loadData);
+      
+    */
     fetch("https://xr4ljr-8080.csb.app/api/items/" + id, {
       method: "PUT",
       body: JSON.stringify({
@@ -52,10 +64,13 @@ function App() {
       }),
       headers: {
         "Content-type": "application/json; charset=UTF-8",
+        "Access-Control-Allow-Origin": "*",
       },
       mode: "cors",
     }).then(loadData);
+  
   }
+
 
   return (
     <div className="App">

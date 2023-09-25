@@ -8,8 +8,8 @@ function ShoppingItem(props) {
     props.deleteItem(props.id);
   }
 
-  function updateClicked() {
-    setEditable((oldValue) => !oldValue);
+  function updateToggleClicked() {
+    setEditable(oldValue => !oldValue);
   }
 
   let content = (
@@ -33,7 +33,7 @@ function ShoppingItem(props) {
     <li>
      { content }
       <button onClick={deleteClicked}>DELETE</button>
-      <button onClick={updateClicked}>
+      <button onClick={updateToggleClicked}>
         {isEditable ? "CANCELL" : "EDIT"}
       </button>
     </li>
