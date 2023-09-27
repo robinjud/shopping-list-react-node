@@ -2,21 +2,23 @@ import React, { useState } from "react";
 import ShoppingForm from "../ShoppingForm/ShoppingForm";
 
 function ShoppingItem(props) {
+
   const [isEditable, setEditable] = useState(false);
 
   function deleteClicked() {
     props.deleteItem(props.id);
   }
 
-  function updateToggleClicked() {
+  function updateClicked() {
     setEditable(oldValue => !oldValue);
   }
 
-  let content = (
-    <>
-      {props.item} ({props.quantity})
-    </>
-  );
+  function itemUpdateDone(id, item, quantity) {
+    setEditable(false);
+    props.updateItem(id, item, quantity);
+  }
+
+let content =  <> {props.item} ({props.quantity}) </>;
   if (isEditable) {
     content = (
       <ShoppingForm
@@ -24,18 +26,21 @@ function ShoppingItem(props) {
         updatedId={props.id}
         itemDefault={props.item}
         quantityDefault={props.quantity}
-        updateItem={props.updateItem}
+        updateItem={itemUpdateDone}
       />
     );
   }
 
   return (
-    <li>
+    <li className="list">
+ 
      { content }
-      <button onClick={deleteClicked}>DELETE</button>
-      <button onClick={updateToggleClicked}>
-        {isEditable ? "CANCELL" : "EDIT"}
+     <table className="table-list"> 
+      <button className="delete-button" onClick={deleteClicked}>DELETE</button>
+      <button className="edit-button" onClick={updateClicked}>
+        {isEditable ? "CANCEL" : "EDIT"}
       </button>
+      </table>
     </li>
   );
 }

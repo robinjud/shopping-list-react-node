@@ -29,7 +29,7 @@ export default function ShoppingForm({ addItem, mode, updatedId, itemDefault, qu
   return (
     <form action="#" method="POST" onSubmit={handleSubmit}> 
     <label htmlFor="item"></label> 
-    <input  
+    <input className="input-box"
         type="text"  
         id="item"  
         name="item"  
@@ -37,14 +37,14 @@ export default function ShoppingForm({ addItem, mode, updatedId, itemDefault, qu
         onChange={handleItemChange} 
         required /> 
     <label htmlFor="quantity"></label> 
-    <input  
+    <input className="input-box"
         type="number"  
         id="quantity"  
         name="quantity"  
         value={num}  
         onChange={handleQuantityChange} 
         required />
-    <button type="submit">{ mode }</button> 
+    <button className="add-button" type="submit">{ mode }</button> 
 </form> 
   )
 }

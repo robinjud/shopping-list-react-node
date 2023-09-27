@@ -3,8 +3,6 @@ import React, { useState, useEffect } from "react";
 import ShoppingForm from "./Components/ShoppingForm/ShoppingForm";
 import ShoppingList from "./Components/ShoppingList/ShoppingList";
 
-import axios from "axios";
-
 import "./App.css";
 
 function App() {
@@ -47,15 +45,18 @@ function App() {
 
   
   function updateItem(id, item, quantity) {
-    /*
-     axios.
-       post("https://xr4ljr-8080.csb.app/api/items/" + id, "/update" {
-          item,
-          quantity,
-       })
-       .then(loadData);
-      
-    */
+    // parallel proactive update on client side
+    setShoppingList(oldShoppingList => {
+      let newShoppingList = structuredClone(oldShoppingList);
+      return newShoppingList.map(value => {
+        if (value.id === id) {
+          value.item = item;
+          value.quantity = quantity;
+        }
+        return value;
+      });
+    });
+
     fetch("https://xr4ljr-8080.csb.app/api/items/" + id, {
       method: "PUT",
       body: JSON.stringify({
@@ -75,10 +76,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Shopping List</h1>
+        <h1>Purchase Control App</h1>
       </header>
-      <main>
-        <ShoppingForm addItem={addItem} mode="Add" />
+      <main >
+        <ShoppingForm  addItem={addItem} mode="Add" />
         <ShoppingList
           shoppingList={shoppingList}
           deleteItem={deleteItem}
