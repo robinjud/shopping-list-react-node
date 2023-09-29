@@ -1,3 +1,15 @@
+#Purchase List App
+
+This is an app created as a tool to maintain a proper control of items needed, no matter what needs to be purchase, whit this app nothing will slip out of your mind.
+
+#User Stories
+
+As a new user, with a busy schedule, it is important for me to have reliable list to remain me of the items needed for personal and household use.
+
+As a very distracted person, the need of a reliable purchase list is important so I do not forget essential items and not wasting more time later.
+
+As a long time customer, the need of a purchase list provides me with and easy way to be remainded of indispensable items that I would easily forget with my busy schedule.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

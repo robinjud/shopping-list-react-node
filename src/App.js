@@ -18,7 +18,7 @@ function App() {
 
   useEffect(loadData, []);
 
-  function addItem(item, quantity) { 
+  function addItem(item, quantity) {
     fetch("https://xr4ljr-8080.csb.app/api/items/new", {
       method: "POST",
       body: JSON.stringify({
@@ -43,12 +43,11 @@ function App() {
     }).then(loadData);
   }
 
-  
   function updateItem(id, item, quantity) {
     // parallel proactive update on client side
-    setShoppingList(oldShoppingList => {
+    setShoppingList((oldShoppingList) => {
       let newShoppingList = structuredClone(oldShoppingList);
-      return newShoppingList.map(value => {
+      return newShoppingList.map((value) => {
         if (value.id === id) {
           value.item = item;
           value.quantity = quantity;
@@ -69,17 +68,15 @@ function App() {
       },
       mode: "cors",
     }).then(loadData);
-  
   }
-
 
   return (
     <div className="App">
       <header className="App-header">
         <h1>Purchase List App</h1>
       </header>
-      <main >
-        <ShoppingForm  addItem={addItem} mode="Add" />
+      <main>
+        <ShoppingForm addItem={addItem} mode="Add" />
         <ShoppingList
           shoppingList={shoppingList}
           deleteItem={deleteItem}

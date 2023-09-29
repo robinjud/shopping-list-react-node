@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ShoppingForm from "../ShoppingForm/ShoppingForm";
 
 function ShoppingItem(props) {
-
   const [isEditable, setEditable] = useState(false);
 
   function deleteClicked() {
@@ -10,7 +9,7 @@ function ShoppingItem(props) {
   }
 
   function updateClicked() {
-    setEditable(oldValue => !oldValue);
+    setEditable((oldValue) => !oldValue);
   }
 
   function itemUpdateDone(id, item, quantity) {
@@ -18,7 +17,12 @@ function ShoppingItem(props) {
     props.updateItem(id, item, quantity);
   }
 
-let content =  <> {props.item} ({props.quantity}) </>;
+  let content = (
+    <>
+      {" "}
+      {props.item} ({props.quantity}){" "}
+    </>
+  );
   if (isEditable) {
     content = (
       <ShoppingForm
@@ -33,13 +37,14 @@ let content =  <> {props.item} ({props.quantity}) </>;
 
   return (
     <li className="list">
- 
-     { content }
-     <table className="table-list"> 
-      <button className="delete-button" onClick={deleteClicked}>DELETE</button>
-      <button className="edit-button" onClick={updateClicked}>
-        {isEditable ? "CANCEL" : "EDIT"}
-      </button>
+      {content}
+      <table className="table-list">
+        <button className="delete-button" onClick={deleteClicked}>
+          DELETE
+        </button>
+        <button className="edit-button" onClick={updateClicked}>
+          {isEditable ? "CANCEL" : "EDIT"}
+        </button>
       </table>
     </li>
   );
