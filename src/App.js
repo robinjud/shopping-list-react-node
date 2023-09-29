@@ -18,7 +18,7 @@ function App() {
 
   useEffect(loadData, []);
 
-  function addItem(item, quantity) {
+  function addItem(item, quantity) { 
     fetch("https://xr4ljr-8080.csb.app/api/items/new", {
       method: "POST",
       body: JSON.stringify({
@@ -76,7 +76,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Purchase Control App</h1>
+        <h1>Purchase List App</h1>
       </header>
       <main >
         <ShoppingForm  addItem={addItem} mode="Add" />

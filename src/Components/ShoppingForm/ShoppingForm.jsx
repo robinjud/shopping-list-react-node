@@ -29,12 +29,14 @@ export default function ShoppingForm({ addItem, mode, updatedId, itemDefault, qu
   return (
     <form action="#" method="POST" onSubmit={handleSubmit}> 
     <label htmlFor="item"></label> 
-    <input className="input-box"
+    <input className="input-box" 
         type="text"  
         id="item"  
         name="item"  
         value={item}  
         onChange={handleItemChange} 
+        pattern='.*\S.*'
+        maxLength={32}
         required /> 
     <label htmlFor="quantity"></label> 
     <input className="input-box"
