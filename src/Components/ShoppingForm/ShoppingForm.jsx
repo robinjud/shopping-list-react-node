@@ -44,6 +44,7 @@ export default function ShoppingForm({ addItem, mode, updatedId, itemDefault, qu
         id="quantity"  
         name="quantity"  
         value={num}  
+        min={0}
         onChange={handleQuantityChange} 
         required />
     <button className="add-button" type="submit">{ mode }</button> 

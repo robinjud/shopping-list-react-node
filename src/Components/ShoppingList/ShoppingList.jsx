@@ -36,17 +36,20 @@ function ShoppingItem(props) {
   }
 
   return (
+  
     <li className="list">
+    
       {content}
-      <table className="table-list">
+    
         <button className="delete-button" onClick={deleteClicked}>
           DELETE
         </button>
         <button className="edit-button" onClick={updateClicked}>
           {isEditable ? "CANCEL" : "EDIT"}
         </button>
-      </table>
+       
     </li>
+
   );
 }
 
