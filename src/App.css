@@ -9,3 +9,20 @@
   margin: 6px;
   padding: 6px;
 }
+
+.Footer {
+  background: antiquewhite;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align:center;
+}
+
+.Footer-title {
+  color: #8b4513;
+  cursor: pointer;
+}
+
+.Footer-title:hover {
+  color:blue;
+}

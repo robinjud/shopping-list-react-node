@@ -16,14 +16,12 @@ code {
   list-style: none;
   padding: 3px;
   margin: 10px;
-  margin-left: 27%;
+  margin-left: 33%;
   background-image: linear-gradient(#bdb76b, #fffacd);
   width: 600px;
   height: 80px;
   border-radius: 8%;
 }
-  
-
 
 .add-button {
   color: black;
@@ -70,3 +68,4 @@ code {
 .update-input {
   margin-right: 5%;
 }
+

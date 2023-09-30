@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 
 import ShoppingForm from "./Components/ShoppingForm/ShoppingForm";
 import ShoppingList from "./Components/ShoppingList/ShoppingList";
+import Footer from "./Components/Footer";
+
+
 
 import "./App.css";
 
@@ -82,9 +85,9 @@ function App() {
           deleteItem={deleteItem}
           updateItem={updateItem}
         />
-      </main>
+        <Footer/>
+      </main>       
     </div>
-  
   );
 }
 
