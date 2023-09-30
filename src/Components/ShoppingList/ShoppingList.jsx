@@ -64,3 +64,7 @@ export default function ShoppingList({ shoppingList, deleteItem, updateItem }) {
 
   return <ul>{itemsJsx}</ul>;
 }
+
+<fotter>
+    <p>this is a footer<p/>
+</fotter>
