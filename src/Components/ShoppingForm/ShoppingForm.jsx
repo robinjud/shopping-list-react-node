@@ -29,7 +29,7 @@ export default function ShoppingForm({ addItem, mode, updatedId, itemDefault, qu
   return (
     <form action="#" method="POST" onSubmit={handleSubmit}> 
     <label htmlFor="item"></label> 
-    <input className="input-box" 
+    <input className="input-box" placeholder='List Item'
         type="text"  
         id="item"  
         name="item"  
@@ -39,7 +39,7 @@ export default function ShoppingForm({ addItem, mode, updatedId, itemDefault, qu
         maxLength={32}
         required /> 
     <label htmlFor="quantity"></label> 
-    <input className="input-box"
+    <input className="input-box" placeholder='Item Quantity'
         type="number"  
         id="quantity"  
         name="quantity"  
