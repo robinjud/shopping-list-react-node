@@ -1,16 +1,16 @@
 # Purchase List App
 
-This is an app created as a tool to maintain a proper control of items needed, no matter what needs to be purchase, whit this app nothing will slip out of your mind.
+This is an app created as a tool to maintain a proper control of items needed, no matter what needs to be purchase, with this app nothing will slip out of your mind.
 
 https://robinjud.github.io/shopping-list-react-node/
 
 # User Stories
 
-As a new user, with a busy schedule, it is important for me to have reliable list to remain me of the items needed for personal and household use.
+As a new user, with a busy schedule, it is important for me to have a reliable shopping list to remind me of the items needed for my personal and household use, so I can focus on other important errands.
 
-As a very distracted person, the need of a reliable purchase list is important so I do not forget essential items and not wasting more time later.
+As a very distracted person the need for a purchase list is important, so I do not forget essential items and do not waste more time later.
 
-As a long time customer, the need of a purchase list provides me with and easy way to be remainded of indispensable items that I would easily forget with my busy schedule.
+As a longtime customer the use of a purchase list app has made my shopping errands easier, so I can be more productive with my time.
 
 # Getting Started with Create React App
 
