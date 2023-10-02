@@ -2,6 +2,8 @@
 
 This is an app created as a tool to maintain a proper control of items needed, no matter what needs to be purchase, whit this app nothing will slip out of your mind.
 
+https://robinjud.github.io/shopping-list-react-node/
+
 # User Stories
 
 As a new user, with a busy schedule, it is important for me to have reliable list to remain me of the items needed for personal and household use.
