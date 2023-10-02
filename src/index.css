@@ -6,9 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #e3dac9;
-  
+  min-width: 400px;
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -16,7 +15,7 @@ code {
 }
 .list {
   display: flex;
-  
+
   align-items: center;
   justify-content: center;
   list-style: none;
@@ -26,8 +25,6 @@ code {
   width: 50%;
   height: 120px;
   border-radius: 8%;
-  
-
 }
 
 .add-button {
@@ -67,11 +64,10 @@ code {
   margin-right: 4%;
 }
 
-.delete-edit-buton{
+.delete-edit-buton {
   display: flex;
   flex-direction: row;
 }
 .update-input {
   margin-right: 5%;
 }
-
