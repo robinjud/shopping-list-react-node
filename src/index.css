@@ -15,16 +15,21 @@ code {
 }
 .list {
   display: flex;
-
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   list-style: none;
-
-  margin-left: 25%;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-image: linear-gradient(#bdb76b, #fffacd);
-  width: 50%;
-  height: 120px;
+  width: 400px;
+  height: 160px;
   border-radius: 8%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-left: 38%;
+  
 }
 
 .add-button {

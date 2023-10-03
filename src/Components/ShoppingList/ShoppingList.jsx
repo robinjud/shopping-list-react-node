@@ -36,20 +36,16 @@ function ShoppingItem(props) {
   }
 
   return (
-  
     <li className="list">
-    
       {content}
-    
-        <button className="delete-button" onClick={deleteClicked}>
-          DELETE
-        </button>
-        <button className="edit-button" onClick={updateClicked}>
-          {isEditable ? "CANCEL" : "EDIT"}
-        </button>
-       
-    </li>
 
+      <button className="delete-button" onClick={deleteClicked}>
+        DELETE
+      </button>
+      <button className="edit-button" onClick={updateClicked}>
+        {isEditable ? "CANCEL" : "EDIT"}
+      </button>
+    </li>
   );
 }
 
@@ -67,4 +63,3 @@ export default function ShoppingList({ shoppingList, deleteItem, updateItem }) {
 
   return <ul>{itemsJsx}</ul>;
 }
-
