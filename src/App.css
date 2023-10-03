@@ -15,7 +15,7 @@
   position: relative;
   bottom: 0;
   width: 100%;
-  text-align:center;
+  text-align: center;
 }
 
 .Footer-title {
@@ -24,5 +24,5 @@
 }
 
 .Footer-title:hover {
-  color:blue;
+  color: blue;
 }
