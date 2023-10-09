@@ -37,10 +37,10 @@ function ShoppingItem(props) {
 
   return (
     <li className="list">
+        
       {content}
-
-      <button className="delete-button" onClick={deleteClicked}>
-        DELETE
+      
+      <button className="delete-button" onClick={deleteClicked}>DELETE
       </button>
       <button className="edit-button" onClick={updateClicked}>
         {isEditable ? "CANCEL" : "EDIT"}

@@ -3,19 +3,18 @@
 }
 
 .App-header {
+  
   color: #8b4513;
-  margin-left: 3%;
-  background-color: antiquewhite;
-  margin: 6px;
+  background-color: antiquewhite; 
   padding: 6px;
+  
 }
 
 .Footer {
   background: antiquewhite;
-  position: relative;
-  bottom: 0;
   width: 100%;
-  text-align: center;
+ 
+
 }
 
 .Footer-title {
