@@ -36,7 +36,7 @@ export default function ShoppingForm({ addItem, mode, updatedId, itemDefault, qu
         value={item}  
         onChange={handleItemChange} 
         pattern='.*\S.*'
-        maxLength={25}
+        maxLength={38}
         required /> 
     <label htmlFor="quantity"></label> 
     <input className="input-box" placeholder=' Quantity'

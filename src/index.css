@@ -25,15 +25,21 @@ code {
   width:400px;
   min-height: 160px;
   border-radius: 8%;
-  text-overflow: ellipsis;
-  overflow: hidden;
   margin: auto;
   margin-block: 20px;
-
-  
-  
 }
 
+.item-list {
+  width: 240px;
+ 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item-list:hover {
+  overflow: visible;
+  cursor: pointer;
+}
 .add-button {
   color: black;
   margin: 10px;
