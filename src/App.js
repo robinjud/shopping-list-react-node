@@ -10,7 +10,7 @@ function App() {
   const [shoppingList, setShoppingList] = useState([]);
 
   const loadData = () => {
-    fetch("https://xr4ljr-8080.csb.app/api/items")
+    fetch("https://45n94v-8080.csb.app/api/items")
       .then((x) => x.json())
       .then((response) => {
         setShoppingList(response);
@@ -20,7 +20,7 @@ function App() {
   useEffect(loadData, []);
 
   function addItem(item, quantity) {
-    fetch("https://xr4ljr-8080.csb.app/api/items/new", {
+    fetch("https://45n94v-8080.csb.app/api/items/new", {
       method: "POST",
       body: JSON.stringify({
         item,
@@ -34,7 +34,7 @@ function App() {
   }
 
   function deleteItem(id) {
-    fetch("https://xr4ljr-8080.csb.app/api/items/" + id, {
+    fetch("https://45n94v-8080.csb.app/api/items/" + id, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -57,7 +57,7 @@ function App() {
       });
     });
 
-    fetch("https://xr4ljr-8080.csb.app/api/items/" + id, {
+    fetch("https://45n94v-8080.csb.app/api/items/" + id, {
       method: "PUT",
       body: JSON.stringify({
         item,
