@@ -7,14 +7,16 @@ https://robinjud.github.io/shopping-list-react-node/
 # User Stories
 
 AS A distracted person
-I WANT TO keep track of my essential items a purchase list
+I WANT TO keep track of my essential items in a purchase list
 SO THAT I can save time.
 
-As a new user, with a busy schedule, it is important for me to have a reliable shopping list to remind me of the items needed for my personal and household use, so I can focus on other important errands.
+AS A retunring customer
+I WANT TO record the needs of the family
+SO THAT I can save time
 
-As a very distracted person the need for a purchase list is important, so I do not forget essential items and do not waste more time later.
-
-As a longtime customer the use of a purchase list app has made my shopping errands easier, so I can be more productive with my time.
+AS A busy person
+I WANT TO access a householg shopping list of essential items
+SO THAT I can focus on other important things
 
 # Getting Started with Create React App
 
