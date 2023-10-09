@@ -19,7 +19,6 @@ code {
   align-items: center;
   justify-content: center;
   list-style: none;
-  margin-bottom: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
   background-image: linear-gradient(#bdb76b, #fffacd);
@@ -28,7 +27,8 @@ code {
   border-radius: 8%;
   text-overflow: ellipsis;
   overflow: hidden;
-  margin-left: 33%;
+  margin: auto;
+  margin-block: 20px;
 
   
   
