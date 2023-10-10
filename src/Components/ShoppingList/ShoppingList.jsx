@@ -36,16 +36,19 @@ function ShoppingItem(props) {
   }
 
   return (
-    <li className="list">
-     <p className="item-list"> {content} </p>
-
+    <table>
+    <li className="list" placeholder="item">
+     <div className="item-list"> {content} </div>
+    
+    
       <button className="delete-button" onClick={deleteClicked}>
-        DELETE
+        Delete
       </button>
       <button className="edit-button" onClick={updateClicked}>
-        {isEditable ? "CANCEL" : "EDIT"}
+        {isEditable ? "Cancel" : "Edit"}
       </button>
     </li>
+    </table>
   );
 }
 

@@ -14,24 +14,22 @@ code {
     monospace;
 }
 .list {
-  display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-items: center;
-  justify-content: center;
-  list-style: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-right:300px;
+  padding-left: 50px;
+  box-shadow: 0 2px 10px 20px lemonchiffon;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  display: flex;
+  list-style: linear-gradient(to left bottom, red, blue); 
   background-image: linear-gradient(#bdb76b, #fffacd);
-  width:400px;
-  min-height: 160px;
-  border-radius: 8%;
-  margin: auto;
-  margin-block: 20px;
+  
 }
 
 .item-list {
   width: 240px;
- 
+
   overflow: hidden;
   text-overflow: ellipsis;
 }
