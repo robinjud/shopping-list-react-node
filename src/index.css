@@ -31,15 +31,12 @@ code {
   width: 570px; 
   overflow: hidden;
   text-overflow: ellipsis;
-  
-  
-  
 }
 
-item-list:hover {
+.item-list:hover {
   overflow: visible;
-  cursor: pointer;
 }
+
 .add-button {
   color: black;
   margin: 10px;

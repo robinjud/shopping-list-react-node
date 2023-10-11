@@ -38,7 +38,10 @@ function ShoppingItem(props) {
   return (
     <table>
     <li className="list" placeholder="item">
-     <div className="item-list"> {content} </div>
+     <div className="item-list"> {content} 
+    
+     
+     </div>
     
     
       <button className="delete-button" onClick={deleteClicked}>
