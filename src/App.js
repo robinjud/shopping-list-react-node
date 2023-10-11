@@ -83,7 +83,7 @@ function App() {
           deleteItem={deleteItem}
           updateItem={updateItem}
         />
-        <Footer />
+        <Footer/>
       </main>
     </div>
   );

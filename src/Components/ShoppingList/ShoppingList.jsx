@@ -35,31 +35,21 @@ function ShoppingItem(props) {
     );
   }
 
-
-
-
-
-
-
-
-
   return (
-    <table>
+    
     <li className="list" placeholder="item">
-     <div className="item-list"> {content} 
+     <div className="item-list"> {content} </div>
     
-     
-     </div>
-    
-    
+     <div className="main-button" >
       <button className="delete-button" onClick={deleteClicked}>
         Delete
       </button>
       <button className="edit-button" onClick={updateClicked}>
         {isEditable ? "Cancel" : "Edit"}
       </button>
+     </div>
     </li>
-    </table>
+    
   );
 }
 

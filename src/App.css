@@ -3,22 +3,30 @@
 }
 
 .App-header {
-  
   color: #8b4513;
-  background-color: antiquewhite; 
+  background-color: antiquewhite;
   padding: 6px;
-  
 }
 
 .Footer {
   background: antiquewhite;
   width: 100%;
- 
-
 }
 
 .Footer-title {
   color: #8b4513;
-  
 }
 
+.social-icons {
+list-style: none;  
+color:#644117 ;  
+}
+
+.social-icons:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  
+}
