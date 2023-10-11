@@ -9,19 +9,19 @@ import connectImg4 from './Images/icons8-youtube-48.png';
 const Footer=() => {
   return (
     <div className="Footer">
-      <h3 className="Footer-title">Follow Us In Our Social Media </h3>
+      <h3 className="Footer-title">Follow Us</h3>
        
-      <ul>
-        <img src={connectImg} alt="facebook-logo"/>
-        <li className="social-icons" >Facebook</li>
-        <img src={connectImg1} alt="x-logo"/>
-        <li className="social-icons">X</li>
-        <img src={connectImg2} alt="instragrm-logo"/>
-        <li className="social-icons" >Instagram</li>
-        <img src={connectImg3} alt="linkedin logo" />
-        <li className="social-icons">Linkedin</li>
-        <img src={connectImg4} alt="youtube-logo"/>
-        <li className="social-icons">Youtube</li>
+      <ul className="social-icons-logos">
+        
+        <li className="social-icons" ><img src={connectImg} alt="facebook-logo"/>Facebook</li>
+      
+        <li className="social-icons"><img src={connectImg1} alt="x-logo"/>X</li>
+       
+        <li className="social-icons" > <img src={connectImg2} alt="instragrm-logo"/>Instagram</li>
+        
+        <li className="social-icons"><img src={connectImg3} alt="linkedin logo" />Linkedin</li>
+    
+        <li className="social-icons"><img src={connectImg4} alt="youtube-logo"/>Youtube</li>
       </ul>
        </div>
     

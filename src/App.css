@@ -18,8 +18,9 @@
 }
 
 .social-icons {
-list-style: none;  
-color:#644117 ;  
+  display: flex;
+align-items: center;
+  color:#644117 ;  
 }
 
 .social-icons:hover{
@@ -27,6 +28,6 @@ color:#644117 ;
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 600px) {
-  
+@media (max-width: 600px) {
+
 }
