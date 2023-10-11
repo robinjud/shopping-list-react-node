@@ -19,9 +19,6 @@
 
 .Footer-title {
   color: #8b4513;
-  cursor: pointer;
+  
 }
 
-.Footer-title:hover {
-  color: blue;
-}
