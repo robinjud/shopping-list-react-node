@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #e3dac9;
-  min-width: 400px;
+  min-width: 600px;
 }
 
 code {
@@ -15,7 +15,7 @@ code {
 }
 .list {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: flex-start;
   box-shadow: 0 2px 10px 20px lemonchiffon;
