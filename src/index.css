@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #e3dac9;
-  min-width: 600px;
+  min-width: 400px;
 }
 
 code {
@@ -14,16 +14,10 @@ code {
     monospace;
 }
 .list {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: flex-start;
-  box-shadow: 0 2px 10px 20px lemonchiffon;
-  margin-bottom: 30px;
-  margin-top: 20px;
+  all: initial;
+  
 
-  list-style: linear-gradient(to left bottom, red, blue);
-  background-image: linear-gradient(#bdb76b, #fffacd);
+
 }
 
 .item-list {
@@ -79,4 +73,5 @@ code {
 
 .main-button {
   display: flex;
+  margin-bottom: 30px;
 }
