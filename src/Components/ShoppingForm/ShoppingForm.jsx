@@ -42,7 +42,7 @@ export default function ShoppingForm({
         value={item}
         onChange={handleItemChange}
         pattern=".*\S.*"
-        maxLength={25}
+        maxLength={50}
         required
       />
       <label htmlFor="quantity"></label>
