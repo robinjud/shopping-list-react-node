@@ -77,13 +77,13 @@ function App() {
         <h1>Purchase List App</h1>
       </header>
       <main>
-        <ShoppingForm addItem={addItem} mode="Add" />
+        <ShoppingForm addItem={addItem} mode="Add"/>
         <ShoppingList
           shoppingList={shoppingList}
           deleteItem={deleteItem}
           updateItem={updateItem}
         />
-        <Footer />
+        <Footer/>
       </main>
     </div>
   );

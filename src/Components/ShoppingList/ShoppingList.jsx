@@ -47,6 +47,7 @@ function ShoppingItem(props) {
           {isEditable ? "Cancel" : "Edit"}
         </button>
       </div>
+      <hr></hr>
     </li>
   );
 }
